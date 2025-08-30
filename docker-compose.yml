@@ -22,9 +22,9 @@ services:
     volumes: 
       - ./core:/usr/src/app
     working_dir: /usr/src/app
-    command: django-admin startproject core .
+    command: python manage.py runserver 0.0.0.0:5000
     ports:
-      - 9000:9000
+      - 5000:5000
     environment:
       - DEBUG=True
     env_file:
