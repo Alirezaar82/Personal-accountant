@@ -23,4 +23,5 @@ urlpatterns = [
     path('api/auth/',include('djoser.urls.jwt')),
     path('api/',include('accounts.urls')),
     path('api/',include('expenseapp.urls')),
+    path('api/',include('incomeapp.urls')),
 ]
