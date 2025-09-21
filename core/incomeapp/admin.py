@@ -7,7 +7,7 @@ from .models import IncomeCategoryModel, IncomeModel
 
 @admin.register(IncomeCategoryModel)
 class IncomeCategoryAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'category_name', 'limit_amount', 'created_at', 'updated_at')
+    list_display = ('id', 'user', 'category_name', 'created_at', 'updated_at')
     search_fields = ('category_name', 'user__username')
     list_filter = ('created_at', 'updated_at')
     ordering = ('-created_at',)
